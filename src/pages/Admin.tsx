@@ -5,7 +5,7 @@ import { BlogPost, BlogPostFormData } from '../types/Blog';
 import './Admin.css';
 
 const Admin: React.FC = () => {
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [editingPost, setEditingPost] = useState<BlogPost | null>(null);
   const [showForm, setShowForm] = useState(false);
