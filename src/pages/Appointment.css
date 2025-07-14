@@ -1,0 +1,227 @@
+.appointment {
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.appointment-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.appointment-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.appointment-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.appointment-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.appointment-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.calendly-section,
+.business-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.calendly-section h3,
+.business-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calendly-embed {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendly-inline-widget {
+  border: none;
+  border-radius: 8px;
+}
+
+.business-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.business-image {
+  flex: 0 0 300px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.business-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.placeholder-image.hidden {
+  display: none;
+}
+
+.business-text {
+  flex: 1;
+}
+
+.business-text p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.business-included {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.business-included h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.included-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.included-item {
+  background: white;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  color: #555;
+  line-height: 1.5;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.included-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.business-cta {
+  background: #00c300;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.business-cta:hover {
+  background: #00b300;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 195, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .appointment {
+    padding: 2rem 1rem;
+  }
+  
+  .appointment-header h1 {
+    font-size: 2rem;
+  }
+  
+  .appointment-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .calendly-section,
+  .business-section {
+    padding: 1.5rem;
+  }
+  
+  .calendly-placeholder {
+    padding: 1.5rem;
+  }
+  
+  .business-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .business-image {
+    flex: none;
+    width: 100%;
+  }
+  
+  .business-image img,
+  .placeholder-image {
+    height: 250px;
+  }
+  
+  .included-items {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .included-item {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .business-cta {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+} 
