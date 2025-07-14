@@ -1,0 +1,37 @@
+.sticky-book-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sticky-book-button {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .book-now-link {
+    background: #00c896;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0, 200, 150, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .book-now-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 200, 150, 0.4);
+  }
+
+  .book-now-link:active {
+    transform: translateY(0);
+  }
+} 
